@@ -1,0 +1,29 @@
+{
+    "name": "MLSP Project",
+    "image": "pytorch/pytorch:2.4.0-cuda11.8-cudnn9-runtime",
+    "runArgs": [
+        "--name",
+        "mlsp-project",
+        "--gpus",
+        "all"
+    ],
+    "postCreateCommand": "apt-get update && apt-get install -y ffmpeg flac gcc python3-dev build-essential git && python -m pip install -r requirements.txt",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-toolsai.jupyter",
+                "ms-toolsai.data-wrangler",
+                "charliermarsh.ruff"
+            ],
+            "settings": {
+                "python.pythonPath": "/opt/conda/bin/python",
+                "python.linting.enabled": true,
+                "python.linting.ruffEnabled": true,
+                "editor.codeActionsOnSave": {
+                    "source.organizeImports": true
+                }
+            }
+        }
+    }
+}
