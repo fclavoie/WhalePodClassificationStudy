@@ -1,0 +1,17 @@
+polars
+pandas
+ffmpeg-python
+ipykernel
+matplotlib
+scikit-learn
+soundfile
+pyflac
+torchaudio
+tqdm
+librosa
+torchlibrosa
+pydub
+panns_inference
+speechbrain
+tensorflow
+tensorflow_io
