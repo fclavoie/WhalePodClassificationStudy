@@ -15,3 +15,6 @@ panns_inference
 speechbrain
 tensorflow
 tensorflow_io
+tensorflow_hub
+jupytext
+torchsummary

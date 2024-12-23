@@ -1,9 +1,9 @@
 {
-    "name": "MLSP Project",
+    "name": "Whale Pop Classification Study",
     "image": "pytorch/pytorch:2.4.0-cuda11.8-cudnn9-runtime",
     "runArgs": [
         "--name",
-        "mlsp-project",
+        "whalepod-classification-study",
         "--gpus",
         "all"
     ],
