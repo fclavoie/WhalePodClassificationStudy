@@ -28,3 +28,14 @@ https://doi.org/10.25921/Z787-9Y54
 
 Various scripts and notebooks are provided to assist with the extraction and processing of relevant audio segments for this study.
 Note that in many of them, path to local folders should be adjusted.
+
+## Reproduce the study
+
+The minimal steps to reproduce the experimentation would be to:
+- Start by downloading the **PIPAN** dataset from Google Cloud Storage (we used the Hawaii subset);
+- Extract the metadata using *metadata_extraction.py*;
+- Use the *flac_extraction* notebook to get annotated segments from the **PIFSC** research team;
+- You can generate random samples in a given window of time using *audio_segmenter.py* and annotate them manually;
+- The sample rate must be changed from 10kHz to 16kHz with *audio_resampler.py*;
+- Create augmented files with *augmentations.py*;
+- You are now ready to train your classifier!
